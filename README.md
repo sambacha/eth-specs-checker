@@ -31,11 +31,12 @@ and save them to the folder from which `bazel run //tools/specs-checker check` w
 
 To check whether reference comments have the matching version of Python specs:
 ```bash
-bazel run //tools/specs-checker check -- --dir $PWD/beacon-chain
-bazel run //tools/specs-checker check -- --dir $PWD/validator
-bazel run //tools/specs-checker check -- --dir $PWD/shared
+./specs-check check --dir $PWD/beacon-chain
+./specs-check check --dir $PWD/validator
+./specs-check check --dir $PWD/shared
 ```
-Or, to check the whole project:
-```bash
-bazel run //tools/specs-checker check -- --dir $PWD
-```
+
+
+## License
+
+Forked from prysmaticlabs prysm develop-tools-specs-checker
